@@ -1,0 +1,13 @@
+{
+  "name": "banana-running",
+  "version": "1.0.0",
+  "description": "Templates for the banana running challenge",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "Stack Builders",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
