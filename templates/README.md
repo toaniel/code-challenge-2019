@@ -23,11 +23,11 @@ Search for comments like the one below in the JS files to find where to replace 
 
 In the `json` folder there are some data JSON examples of the data that the server could send to the client.
 
-  1. [create-track.json](public/json/create-order.json) Create a track
-  2. [order.json](public/json/order.json) Individual track
-  3. [orders.json](public/json/orders.json) List of tracks
-  4. [statistic-distance.json](public/json/statistics.json) Statistics from tracks by distance
-  5. [statistic-velocity.json](public/json/statistics.json) Statistics from tracks by velocity
+  1. [create-track.json](public/json/create-track.json) Create a track
+  2. [track.json](public/json/track.json) Individual track
+  3. [tracks.json](public/json/tracks.json) List of tracks
+  4. [statistic-distance.json](public/json/statistics-distance.json) Statistics from tracks by distance
+  5. [statistic-velocity.json](public/json/statistics-velocity.json) Statistics from tracks by velocity
 
 ## Installation
 

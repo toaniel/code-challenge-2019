@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Running around La Carolina",
+    "distance": 2000,
+    "time": 3600,
+    "date": "01-01-2019"
+  },
+  {
+    "id": 2,
+    "name": "Running around La Alameda",
+    "distance": 1000,
+    "time": 1800,
+    "date": "01-02-2019"
+  },
+  {
+    "id": 3,
+    "name": "Running around Parque Metropolitano",
+    "distance": 3000,
+    "time": 4800,
+    "date": "01-03-2019"
+  }
+]
