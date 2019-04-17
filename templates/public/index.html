@@ -3,11 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Banana Running</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <h3>Banana Running!</h3>
-    <a href="/tracks.html">Tracks</a>
-    <a href="/statistics-distance.html">Statistics (Distance vs Time)</a>
-    <a href="/statistics-velocity.html">Statistics (Velocity vs Time)</a>
+    <div class="container">
+
+      <div class="row">
+        <h3>Banana Running!</h3>
+      </div>
+
+      <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tracks</h5>
+            <p class="card-text">Take a look at your tracks</p>
+            <a href="/tracks.html">Go there!</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Statistics (Distance vs Time)</h5>
+            <p class="card-text">How well have you performed in distance?</p>
+            <a href="/statistics-distance.html">Check graph</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Statistics (Velocity vs Time)</h5>
+            <p class="card-text">How well have you performed in velocity?</p>
+            <a href="/statistics-velocity.html">Check graph</a>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
