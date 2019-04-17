@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <title>Banana Running | Track Details</title>
+  </head>
+
+  <body>
+
+    <header class="header-section container-fluid">
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">
+          <img src="images/image4.png" width="50" height="50" class="align-top" alt="">
+          Banana Running
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/tracks.html">Tracks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/statistics.html">Statistics</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div id="track"></div>
+    </div>
+
+    <template id="track-template">
+      <h2 id="title" class="text-center">Track Detail</h2>
+      <br>
+
+      <!-- TRACK DATA -->
+
+      <div id="track-info">
+        <div class="row">
+          <label class="col-sm-3">Name: </label>
+          <h5>{{name}}</h5>
+        </div>
+
+        <div class="row">
+          <label class="col-sm-3">Date: </label>
+          <h5>{{date}}</h5>
+        </div>
+
+        <div class="row">
+          <label class="col-sm-3">Distance: </label>
+          <h5>{{distance}} [m]</h5>
+        </div>
+
+        <div class="row">
+          <label class="col-sm-3">Time: </label>
+          <h5>{{time}} [min]</h5>
+        </div>
+
+        <div class="row">
+          <label class="col-sm-3">Velocity: </label>
+          <h5>{{velocity}} [m/s]</h5>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- POINTS -->
+
+      <table class="table bg-white table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th class="w-50">Latitude</th>
+            <th class="w-50">Longitude</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#points}}
+          <tr>
+            <td>{{lat}}</td>
+            <td>{{long}}</td>
+          </tr>
+          {{/points}}
+        </tbody>
+      </table>
+    </template>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="js/track-detail.js"></script>
+  </body>
+</html>
