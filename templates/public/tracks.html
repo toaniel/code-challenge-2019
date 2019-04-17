@@ -1,15 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Banana Running | Tracks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <title>Banana Running | Tracks</title>
   </head>
 
   <body>
+
+    <header class="header-section container-fluid">
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">
+          <img src="images/image4.png" width="50" height="50" class="align-top" alt="">
+          Banana Running
+        </a>
+        <ul class="navbar-nav">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="/tracks.html">Tracks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/statistics.html">Statistics</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
     <div class="container">
-      <h3>Tracks</h3>
+      <div class="row">
+        <h4>List of tracks</h4>
+        <table id="tracks" class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th class="col-3">Name</th>
+              <th class="col-2">Distance</th>
+              <th class="col-2">Time</th>
+              <th class="col-3">Date</th>
+              <th class="col-2">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
     </div>
+
+    <template id="track-item-template">
+      <tr class="">
+        <td class="col-3">
+          {{name}}
+        </td>
+        <td class="col-2">
+          {{distance}}
+        </td>
+        <td class="col-2">
+          {{time}}
+        </td>
+        <td class="col-3">
+          {{date}}
+        </td>
+        <td class="col-2">
+          <div class="text-center">
+            <a class="btn btn-success btn-sm" href="/track-detail.html">View</a>
+          </div>
+        </td>
+      </tr>
+    </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="js/tracks.js"></script>
   </body>
 </html>
