@@ -21,9 +21,9 @@
             <a class="nav-link" href="/tracks.html">Tracks</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/statistics-distance.html">Statistics Distance</a>
+            <a class="nav-link" href="/statistics-distance.html">Statistics Distance</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="/statistics-velocity.html">Statistics Velocity</a>
           </li>
         </ul>
@@ -32,6 +32,11 @@
 
     <div class="container">
       <h3>Statistics (Velocity vs Time)</h3>
+
+      <canvas id="graph" width="400" height="100"></canvas>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="js/statistics-velocity.js"></script>
   </body>
 </html>

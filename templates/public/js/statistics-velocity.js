@@ -1,0 +1,53 @@
+/**
+ * Fetches the statistics for velocity and appends to the page.
+ *
+ * ****************************
+ * Please change 'json/statistics-velocity.json'
+ * with your service endpoint below
+ * ****************************
+ */
+fetch('json/statistic-velocity.json')
+  .then(response => response.json())
+  .then(statistics => {
+    let labels = statistics.map(statistic => statistic.date);
+    let data = statistics.map(statistic => statistic.velocity);
+    plotDistanceGraph(labels, data);
+  });
+
+/**
+ * Find the graph canvas and display it with the labels (date) and data (velocity)
+ * @param labels
+ * @param data
+ */
+function plotDistanceGraph(labels, data) {
+  let ctx = document.getElementById('graph').getContext('2d');
+  let chartDistance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Velocity',
+        data: data,
+        fill: false
+      }]
+    },
+    options: {
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Day'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Velocity [m/s]'
+          }
+        }]
+      }
+    }
+  });
+}
