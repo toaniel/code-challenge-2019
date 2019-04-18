@@ -22,7 +22,10 @@
             <a class="nav-link" href="/tracks.html">Tracks</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/statistics.html">Statistics</a>
+            <a class="nav-link" href="/statistics-distance.html">Statistics Distance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/statistics-velocity.html">Statistics Velocity</a>
           </li>
         </ul>
       </nav>
@@ -77,12 +80,13 @@
           </tr>
         </thead>
         <tbody>
-          {{#points}}
+          <!-- TODO: Fix points not being displayed without HTML comments -->
+          <!--{{#points}}-->
           <tr>
             <td>{{lat}}</td>
             <td>{{long}}</td>
           </tr>
-          {{/points}}
+          <!--{{/points}}-->
         </tbody>
       </table>
     </template>
