@@ -32,7 +32,7 @@ In the `json` folder there are some data JSON examples of the data that the serv
 ## Installation
 
 If you need a static server to check the HTML templates you could use
-[http-server](https://github.com/indexzero/http-server) that we configured for you.
+[lite-server](https://github.com/johnpapa/lite-server/) that we configured for you.
 
 ### Instructions to install and run the server:
 

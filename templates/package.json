@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Templates for the banana running challenge",
   "scripts": {
-    "start": "http-server"
+    "start": "lite-server --baseDir=public"
   },
   "author": "Stack Builders",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "lite-server": "^2.4.0"
   }
 }

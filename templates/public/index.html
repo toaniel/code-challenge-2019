@@ -29,28 +29,57 @@
     </header>
 
     <div class="container">
-      <div class="form">
+      <div id="track-alert" class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Great!</h4>
+        <p>Your track was accepted successfully</p>
+      </div>
+
+      <h3>Track:</h3>
+      <form id="track-form">
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" name="name" class="form-control"
                                          placeholder="Example: Running La Carolina">
         </div>
+
         <div class="form-group">
           <label for="distance">Distance:</label>
           <input type="number" name="distance" class="form-control">
         </div>
+
         <div class="form-group">
           <label for="time">Time:</label>
           <input type="number" name="name" class="form-control">
         </div>
+
         <div class="form-group">
           <label for="date">Date:</label>
           <input type="date" name="date" class="form-control">
         </div>
-        <input id="submit" type="submit" name="submit" class="btn btn-success" value="Submit!">
-      </div>
-    </div>
 
+        <div class="points">
+          <h4>Points:</h4>
+          <div class="form-group point">
+            <h6>Point 1:</h6>
+            <label for="lat">Lat:</label>
+            <input type="number" name="lat" class="form-control">
+            <label for="long">Long:</label>
+            <input type="number" name="long" class="form-control">
+          </div>
+
+          <div class="form-group point">
+            <h6>Point 2:</h6>
+            <label for="lat">Lat:</label>
+            <input type="number" name="lat" class="form-control">
+            <label for="long">Long:</label>
+            <input type="number" name="long" class="form-control">
+          </div>
+        </div>
+
+        <button id="add-more-points" class="btn btn-info">Add point</button>
+        <input id="submit" type="submit" name="submit" class="btn btn-success" value="Submit!">
+      </form>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="js/index.js"></script>
   </body>
