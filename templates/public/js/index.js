@@ -36,15 +36,19 @@ $("#track-form").submit(event => {
  * Add extra points
  */
 
-$('#add-more-points').click(e => {
+$('#add-more-points').click(event => {
   $(".points").append(`
-      <div class="form-group point">
-        <h6>Extra point:</h6>
-        <label for="lat">Lat:</label>
-        <input type="number" name="lat" class="form-control">
-        <label for="long">Long:</label>
-        <input type="number" name="long" class="form-control">
-      </div>
+          <h6>Extra point:</h6>
+          <div class="form-group point row">
+            <div class="col">
+              <label for="lat">Lat:</label>
+              <input type="number" name="lat" class="form-control">
+            </div>
+            <div class="col">
+              <label for="long">Long:</label>
+              <input type="number" name="long" class="form-control">
+            </div>
+          </div>
   `);
 });
 
@@ -77,3 +81,4 @@ function showNotification() {
   setTimeout(() => trackAlert.toggle(), 5000);
 }
 
+$("#track-alert").toggle();
