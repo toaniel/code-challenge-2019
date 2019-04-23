@@ -43,5 +43,5 @@ and [Linux/Mac](https://nodesource.com/blog/installing-node-js-tutorial-using-nv
   1. `npm install` or `yarn install`
   2. `npm start`
 
-Open `http://localhost:8080` in your browser to try it out.
+Open [`http://localhost:3000`](http://localhost:3000) in your browser to try it out.
 
