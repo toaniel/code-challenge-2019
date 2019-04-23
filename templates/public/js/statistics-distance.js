@@ -38,6 +38,15 @@ function plotDistanceGraph(labels, data) {
           scaleLabel: {
             display: true,
             labelString: 'Day'
+          },
+          type: 'time',
+          time: {
+            tooltipFormat: 'll HH:mm',
+            unit: 'day',
+            unitStepSize: 1,
+            displayFormats: {
+              'day': 'MM/DD/YYYY'
+            }
           }
         }],
         yAxes: [{
