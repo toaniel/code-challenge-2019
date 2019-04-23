@@ -26,8 +26,8 @@ In the `json` folder there are some data JSON examples of the data that the serv
   1. [create-track.json](public/json/create-track.json) Create a track
   2. [track.json](public/json/track.json) Individual track
   3. [tracks.json](public/json/tracks.json) List of tracks
-  4. [statistic-distance.json](public/json/statistics-distance.json) Statistics from tracks by distance
-  5. [statistic-velocity.json](public/json/statistics-velocity.json) Statistics from tracks by velocity
+  4. [statistic-distance.json](public/json/statistic-distance.json) Statistics from tracks by distance
+  5. [statistic-velocity.json](public/json/statistic-velocity.json) Statistics from tracks by velocity
 
 ## Installation
 
