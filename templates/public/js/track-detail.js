@@ -1,14 +1,15 @@
 /**
  * Set the id to query the track
  */
-let id = 1;
+var url = new URL(window.location);
+var id = parseInt(url.searchParams.get("id"));
 
 /**
  * Fetches the track detail and appends to the page.
  *
  * ****************************
  * Please change '/json/track.json?id=${id}'
- * with your service endpoint below
+ * with your service endpoint below (e.g. `/track/:id`)
  * ****************************
  */
 fetch(`json/track.json?id=${id}`)
