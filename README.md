@@ -11,15 +11,55 @@ We will evaluate your coding technique, your ability to work in a team and your 
 Surprise us with your ideas and your creativity. You will be asked to present your work in front of
 the public so be prepared to sell your ideas!
 
-
 # The Challenge
 
-- TODO: Transcribe [this doc](https://docs.google.com/document/d/1FmhMShhPiX8o8POlobbg61cCFx1mvAwpRdVELk1pS9c/edit#)
-once the content is approved
+## Banana Running
 
-## Our requirements
+Banana Running is one of the top companies in time tracking software in sporting
+events around the world. We are looking for a team of motivated professionals
+to develop our training tracking app. Do you have what we need to make our vision come true?
 
-- TODO: See challenge
+### Our requirements
+
+We want to track all of our customers’ training sessions. The user should
+provide the following data:
+
+- User’s name
+- Description
+- Date and time for the training session
+- Track (set of points)
+- Total running distance
+- Total running time
+
+You decide how the user has to input the data and how to validate the input.
+
+
+Also, we need to show the user his/her progress. We should at least present the
+following reports:
+
+- **Running distance over time:** We’ll show the progress of the user’s running records.
+You can add whatever fields you deem necessary (heart rate, burned calories, mean velocity)
+to make the report useful.
+- **Rank the user among others:** How the user is compared to other similar users?
+Show him/her how to beat other people with similar running statistics.
+- **(Optional) Compare two running sessions:** The user would select two entries
+from his history and will see the differences between them in terms of distance/time.
+We can also show an animation of a simulated “race” between the two tracks
+
+You have to decide the best way to present this information. Make it
+user-friendly and interactive. When working on the frontend, add graphs,
+interactive tables, maps, etc. Be mindful of the data you're going to persist
+in the database and the API design when working on the backend.
+
+### Keys to success
+
+- Be creative. For example, you can use a map to acquire the points of the
+track and calculate the distance.
+- You’ll decide on the architecture. Is it client/server? Server-side rendered?
+Are you going with relational DBs or no-SQL? Bonus points for strong
+architectural design, code cleanliness, and UX features.
+- Think about extending the app in the future.
+- Surprise us with features we didn’t think about!
 
 ## HTML Templates
 
