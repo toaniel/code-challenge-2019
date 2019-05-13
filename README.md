@@ -7,25 +7,19 @@ is about to start and you're going to be part of it! In this repository you
 will find the challenge description and some useful templates that will
 save you some time and focus on the software architecture design.
 
-## How is this project going to be evaluated
+We will evaluate your coding technique, your ability to work in a team and your communication skills.
+Surprise us with your ideas and your creativity. You will be asked to present your work in front of
+the public so be prepared to sell your ideas!
 
-- TODO: Add description
 
 # The Challenge
 
-- TODO: Add description
+- TODO: Transcribe [this doc](https://docs.google.com/document/d/1FmhMShhPiX8o8POlobbg61cCFx1mvAwpRdVELk1pS9c/edit#)
+once the content is approved
 
 ## Our requirements
 
-- TODO: Add description
-
-The initial version will have these pages:
-
-- TODO: Add description
-
-1. **Place your tracks:** Add description.
-2. **View your tracks:** Add description.
-3. **View your reports:** Add description.
+- TODO: See challenge
 
 ## HTML Templates
 
