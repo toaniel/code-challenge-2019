@@ -15,6 +15,8 @@ the public so be prepared to sell your ideas!
 
 ## Banana Running
 
+[logo][logo]
+
 Banana Running is one of the top companies in time tracking software in sporting
 events around the world. We are looking for a team of motivated professionals to
 develop our training tracking app. Do you have what we need to make our vision come true?
@@ -29,6 +31,8 @@ provide the following data:
 - Running Track (set of coordinates)
 - Total running distance
 - Total running time
+
+[form][form]
 
 You decide how the user has to input the data and how to validate the input.
 For instance, you can ask the user to enter the set of coordinates in a classic
@@ -46,6 +50,8 @@ You may have to extend your model in order to add user identification.
 - **(Optional) Compare two running sessions:** The user would select two entries
 from his history and will see the differences between them in terms of distance/time.
 We can also show an animation of a simulated “race” between the two tracks
+
+[compare][compare]
 
 You have to decide the best way to present this information.
 Make it user-friendly and interactive. When working on the frontend, add graphs,
@@ -73,3 +79,7 @@ for more details.
 # License
 
 MIT, see the [LICENSE](LICENSE) file.
+
+[logo]: ./img_repo/image1.png
+[form]: ./img_repo/image2.png
+[compare]: ./img_repo/image3.png
