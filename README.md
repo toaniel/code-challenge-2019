@@ -16,38 +16,39 @@ the public so be prepared to sell your ideas!
 ## Banana Running
 
 Banana Running is one of the top companies in time tracking software in sporting
-events around the world. We are looking for a team of motivated professionals
-to develop our training tracking app. Do you have what we need to make our vision come true?
+events around the world. We are looking for a team of motivated professionals to
+develop our training tracking app. Do you have what we need to make our vision come true?
 
 ### Our requirements
 
 We want to track all of our customers’ training sessions. The user should
 provide the following data:
 
-- User’s name
 - Description
 - Date and time for the training session
-- Track (set of points)
+- Running Track (set of coordinates)
 - Total running distance
 - Total running time
 
 You decide how the user has to input the data and how to validate the input.
+For instance, you can ask the user to enter the set of coordinates in a classic
+form or use an embedded map in the page and ask the user to select points from the map.
 
-
-Also, we need to show the user his/her progress. We should at least present the
-following reports:
+Also, we need to show the user his/her progress. We should at least present the following reports:
 
 - **Running distance over time:** We’ll show the progress of the user’s running records.
-You can add whatever fields you deem necessary (heart rate, burned calories, mean velocity)
-to make the report useful.
-- **Rank the user among others:** How the user is compared to other similar users?
+You can add whatever fields you deem necessary (heart rate, burned calories, mean velocity) to make the report useful.
+
+- **(Optional) Rank the user among others:** How the user is compared to other similar users?
 Show him/her how to beat other people with similar running statistics.
+You may have to extend your model in order to add user identification.
+
 - **(Optional) Compare two running sessions:** The user would select two entries
 from his history and will see the differences between them in terms of distance/time.
 We can also show an animation of a simulated “race” between the two tracks
 
-You have to decide the best way to present this information. Make it
-user-friendly and interactive. When working on the frontend, add graphs,
+You have to decide the best way to present this information.
+Make it user-friendly and interactive. When working on the frontend, add graphs,
 interactive tables, maps, etc. Be mindful of the data you're going to persist
 in the database and the API design when working on the backend.
 
