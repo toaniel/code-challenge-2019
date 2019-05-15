@@ -15,7 +15,7 @@ the public so be prepared to sell your ideas!
 
 ## Banana Running
 
-[logo][logo]
+![logo][logo]
 
 Banana Running is one of the top companies in time tracking software in sporting
 events around the world. We are looking for a team of motivated professionals to
@@ -32,7 +32,7 @@ provide the following data:
 - Total running distance
 - Total running time
 
-[form][form]
+![form][form]
 
 You decide how the user has to input the data and how to validate the input.
 For instance, you can ask the user to enter the set of coordinates in a classic
@@ -51,7 +51,7 @@ You may have to extend your model in order to add user identification.
 from his history and will see the differences between them in terms of distance/time.
 We can also show an animation of a simulated “race” between the two tracks
 
-[compare][compare]
+![compare][compare]
 
 You have to decide the best way to present this information.
 Make it user-friendly and interactive. When working on the frontend, add graphs,
@@ -81,5 +81,5 @@ for more details.
 MIT, see the [LICENSE](LICENSE) file.
 
 [logo]: ./img_repo/image1.png
-[form]: ./img_repo/image2.png
-[compare]: ./img_repo/image3.png
+[compare]: ./img_repo/image2.png
+[form]: ./img_repo/image3.png
