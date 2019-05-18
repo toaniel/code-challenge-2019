@@ -1,3 +1,11 @@
 templates/node_modules
 express-app/node_modules
 backend/node_modules
+backend/journal
+*.wt
+backend/diagnostic.data
+backend/mongod.lock
+backend/storage.bson
+backend/WiredTiger
+backend/WiredTiger.lock
+backend/WiredTiger.turtle
