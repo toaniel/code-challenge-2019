@@ -1,3 +1,5 @@
+/* FRONTEND */
+
 /**
  * POST the track on /track
  * @param track

@@ -1,3 +1,5 @@
+/* BACKEND */
+
 const express = require('express')
 const app = express()
 const port = 3002
@@ -5,7 +7,6 @@ const cors = require('cors')
 
 app.use (cors())
 app.get('/', (req, res) => res.send('Hello World!'))
-
 
 app.get('/distances', function(req, res) {
  const data = [
@@ -18,7 +19,7 @@ app.get('/distances', function(req, res) {
 		"date": "2019-01-02T23:00:00.000Z"
 	  },
 	  {
-		"distance": 40,
+		"distance": 80,
 		"date": "2019-01-03T23:00:00.000Z"
 	  },
 	  {
@@ -29,7 +30,6 @@ app.get('/distances', function(req, res) {
   res.send(data);
   });
 
-
 app.get('/velocity', function(req, res) {
  const data = [
 	  {
@@ -37,7 +37,7 @@ app.get('/velocity', function(req, res) {
 		"date": "2019-01-01T23:00:00.000Z"
 	  },
 	  {
-		"velocity": 5.5,
+		"velocity": 9.5,
 		"date": "2019-01-02T23:00:00.000Z"
 	  },
 	  {
@@ -64,7 +64,7 @@ app.get('/tracks', function(req, res) {
 	  {
 		"id": 2,
 		"name": "Running around La Alameda",
-		"distance": 1000,
+		"distance": 5000,
 		"time": 1800,
 		"date": "2019-01-03T23:00:00.000Z"
 	  },
