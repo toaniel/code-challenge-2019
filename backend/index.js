@@ -4,6 +4,10 @@ const express = require('express')
 const app = express()
 const port = 3002
 
+
+const bodyp = require('body-parser')
+app.use (bodyp.json())
+
 /* Give cors permissions */
 const cors = require('cors')
 app.use (cors())
@@ -11,6 +15,7 @@ app.use (cors())
 /* Database */
 const mongo = require('mongodb').MongoClient
 const url = 'mongodb://localhost:27017'
+var collection_workouts;
 
 mongo.connect(url, (err, client) => {
   if (err) {
@@ -18,8 +23,11 @@ mongo.connect(url, (err, client) => {
     return
   }
 const db = client.db('banana_running_db')
+
+db.dropDatabase();
+
 const collection_tracks = db.collection('tracks')
-const collection_workouts = db.collection('workouts')
+collection_workouts = db.collection('workouts')
 
 collection_tracks.insertOne( {
 		"id": 1,
@@ -141,30 +149,36 @@ app.get('/tracks', function(req, res) {
   });
   
 app.get('/track/:id', function(req, res) {
- const id = req.params.id;
- console.log(id);
- const data = {
-  "id": 1,
-  "name": "Running around La Carolina",
-  "distance": 2000,
-  "velocity": 0.5,
-  "time": 60,
-  "date": "2019-01-04T23:00:00.000Z",
-  "points": [
-    {
-      "lat": -0.1821626,
-      "long": -78.4857697
-    }, {
-      "lat": -0.1834496,
-      "long": -78.4875187
-    }, {
-      "lat": -0.1817756,
-      "long": -78.4869717
-    }
-  ]
-}
-;
+		const id = req.params.id;
+		console.log(id);
+		const data = {
+		"id": 1,
+		"name": "Running around La Carolina",
+		"distance": 2000,
+		"velocity": 0.5,
+		"time": 60,
+		"date": "2019-01-04T23:00:00.000Z",
+		"points": [
+		{
+		  "lat": -0.1821626,
+		  "long": -78.4857697
+		}, {
+		  "lat": -0.1834496,
+		  "long": -78.4875187
+		}, {
+		  "lat": -0.1817756,
+		  "long": -78.4869717
+		}
+		]
+	};
   res.send(data);
+  });
+  
+  
+app.post('/submit', function(req, res) { 
+  console.log(req.body);
+ collection_workouts.insertOne(req.body);
+  res.status(200);
   });
  
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

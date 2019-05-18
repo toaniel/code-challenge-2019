@@ -10,14 +10,17 @@
  * ****************************
  */
 function postTrack(track) {
-  fetch('/track', {
+  fetch('http://localhost:3002/submit', {
     method: 'POST',
     body: JSON.stringify(track),
     headers: {
       "Content-Type": "application/json; charset=utf-8",
     },
   })
-    .then(res => res.json())
+    .then(res => { 
+    	console.error(res);
+    	return res.json();
+    })
     .then(res => showNotification());
 }
 
@@ -53,6 +56,16 @@ $('#add-more-points').click(event => {
           </div>
   `);
 });
+
+/**
+ * Submit entry
+ * /
+
+$('#submit').click(event => {
+
+post('http://localhost:3002/submit_entry')
+  .then(response => response.json()) /** /
+}); */
 
 /**
  * Gets the track data with JQuery
