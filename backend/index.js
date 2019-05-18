@@ -81,6 +81,7 @@ app.get('/tracks', function(req, res) {
   
 app.get('/track/:id', function(req, res) {
  const id = req.params.id;
+ console.log(id);
  const data = {
   "id": 1,
   "name": "Running around La Carolina",
