@@ -36,9 +36,9 @@
       <div id="track"></div>
     </div>
 
-    <template id="track-template">
+    <script id="track-template" type="text/html">
       <h2 id="title" class="text-center">Track Detail</h2>
-      <br>
+      <br/>
 
       <!-- TRACK DATA -->
 
@@ -81,16 +81,15 @@
           </tr>
         </thead>
         <tbody>
-          <!-- TODO: Fix points not being displayed without HTML comments -->
-          <!--{{#points}}-->
+          {{#points}}
           <tr>
             <td>{{lat}}</td>
             <td>{{long}}</td>
           </tr>
-          <!--{{/points}}-->
+          {{/points}}
         </tbody>
       </table>
-    </template>
+    </script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
