@@ -36,7 +36,8 @@ provide the following data:
 
 You decide how the user has to input the data and how to validate the input.
 For instance, you can ask the user to enter the set of coordinates in a classic
-form or use an embedded map in the page and ask the user to select points from the map.
+form or use an embedded map in the page and ask the user to select points
+from the map ([here][map-alternatives] are some alternatives to google maps if you want).
 
 Also, we need to show the user his/her progress. We should at least present the following reports:
 
@@ -62,10 +63,17 @@ in the database and the API design when working on the backend.
 
 - Be creative. For example, you can use a map to acquire the points of the
 track and calculate the distance.
+
 - You’ll decide on the architecture. Is it client/server? Server-side rendered?
 Are you going with relational DBs or no-SQL? Bonus points for strong
 architectural design, code cleanliness, and UX features.
+
+- Auth is not needed for an MVP. Although you may add it along with audit
+records and other features if your focus is on the backend rather than
+the frontend.
+
 - Think about extending the app in the future.
+
 - Surprise us with features we didn’t think about!
 
 ## HTML Templates
@@ -83,3 +91,4 @@ MIT, see the [LICENSE](LICENSE) file.
 [logo]: ./img_repo/image1.png
 [compare]: ./img_repo/image2.png
 [form]: ./img_repo/image3.png
+[map-alternatives]: https://geoawesomeness.com/google-maps-api-alternatives-best-cheap-affordable/
