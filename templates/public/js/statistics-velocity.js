@@ -6,7 +6,7 @@
  * with your service endpoint below
  * ****************************
  */
-fetch('json/statistic-velocity.json')
+fetch('http://localhost:3002/velocity')
   .then(response => response.json())
   .then(statistics => {
     let labels = statistics.map(statistic => statistic.date);

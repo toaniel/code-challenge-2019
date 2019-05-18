@@ -6,7 +6,7 @@
  * with your service endpoint below
  * ****************************
  */
-fetch('json/tracks.json')
+fetch('http://localhost:3002/tracks')
   .then(response => response.json())
   .then(tracks => {
     let rows = tracks.map(element => createTracksTemplate(element));

@@ -12,7 +12,7 @@ var id = parseInt(url.searchParams.get("id"));
  * with your service endpoint below (e.g. `/track/:id`)
  * ****************************
  */
-fetch(`json/track.json?id=${id}`)
+fetch(`http://localhost:3002/track/${id}`)
   .then(response => response.json())
   .then(track => {
     let template = createRowTemplate(track);
