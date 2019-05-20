@@ -78,6 +78,9 @@ collection_workouts.insertOne( {
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.get('/distances', function(req, res) {
+	
+  var total_distance;
+
  const data = [
 	  {
 		"distance": 50,
@@ -177,7 +180,7 @@ app.get('/track/:id', function(req, res) {
   
 app.post('/submit', function(req, res) { 
   console.log(req.body);
- collection_workouts.insertOne(req.body);
+  collection_workouts.insertOne(req.body);
   res.status(200);
   });
  
