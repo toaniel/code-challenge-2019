@@ -1,0 +1,5 @@
+brew install mongodb
+mongod --dbpath .
+# Otra ventana:
+npm install body-parser
+node index.js

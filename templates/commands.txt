@@ -1,0 +1,3 @@
+  546  npm install
+  547  npm start
+# folder: /Users/psyx/repos/code-challenge-2019/templates
